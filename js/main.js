@@ -11,3 +11,5 @@ console.log("stato array dopo push: " + archivioCognomi);
 var archivioCognomiOrdinati = archivioCognomi.sort();
 console.log("stato array dopo ordinamento: " + archivioCognomiOrdinati);
 //scrivo la posizione dove si trova il cognome del utente
+var posizioneCognome = archivioCognomiOrdinati.indexOf(nomeUtente);
+console.log(posizioneCognome);
