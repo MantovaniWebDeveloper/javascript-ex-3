@@ -17,14 +17,8 @@ console.log(posizioneCognome);
 
 //OPZIONALE
 //ciclo per stampare tutti i cognomi su html
-document.getElementById('archivioStampato').innerHTML +
-`<ul>`
-
 for (var i=0; i < archivioCognomiOrdinati.length; i++) {
 console.log(archivioCognomiOrdinati[i]);
-document.getElementById('archivioStampato').innerHTML +=
+document.getElementById('elencoArchivioStampato').innerHTML +=
 `<li>` + archivioCognomiOrdinati[i] + `</li>`
-
 }
-document.getElementById('archivioStampato').innerHTML +
-  `</ul>`
