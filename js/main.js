@@ -14,11 +14,10 @@ console.log("stato array dopo ordinamento: " + archivioCognomiOrdinati);
 //scrivo la posizione dove si trova il cognome del utente
 var posizioneCognome = archivioCognomiOrdinati.indexOf(nomeUtente);
 console.log(posizioneCognome);
-
 //OPZIONALE
 //ciclo per stampare tutti i cognomi su html
 for (var i=0; i < archivioCognomiOrdinati.length; i++) {
 console.log(archivioCognomiOrdinati[i]);
 document.getElementById('elencoArchivioStampato').innerHTML +=
-`<li>` + archivioCognomiOrdinati[i] + `</li>`
+`<li><a href="#">` + archivioCognomiOrdinati[i] + `</a></li>`
 }
