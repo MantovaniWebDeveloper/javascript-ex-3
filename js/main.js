@@ -8,8 +8,23 @@ console.log("nome utente:  " + nomeUtente);
 archivioCognomi.push(nomeUtente);
 console.log("stato array dopo push: " + archivioCognomi);
 //ordino alfabeticamente
+var archivioCognomiOrdinati = [];
 var archivioCognomiOrdinati = archivioCognomi.sort();
 console.log("stato array dopo ordinamento: " + archivioCognomiOrdinati);
 //scrivo la posizione dove si trova il cognome del utente
 var posizioneCognome = archivioCognomiOrdinati.indexOf(nomeUtente);
 console.log(posizioneCognome);
+
+//OPZIONALE
+//ciclo per stampare tutti i cognomi su html
+document.getElementById('archivioStampato').innerHTML +
+`<ul>`
+
+for (var i=0; i < archivioCognomiOrdinati.length; i++) {
+console.log(archivioCognomiOrdinati[i]);
+document.getElementById('archivioStampato').innerHTML +=
+`<li>` + archivioCognomiOrdinati[i] + `</li>`
+
+}
+document.getElementById('archivioStampato').innerHTML +
+  `</ul>`
