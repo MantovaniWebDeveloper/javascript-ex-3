@@ -21,9 +21,6 @@ body {
   text-align: center;
   margin-top: 50px;
 }
-#elencoArchivioStampato {
-
-}
 #elencoArchivioStampato li  {
   color: #000;
   list-style-type: none;
@@ -31,8 +28,14 @@ body {
   background-color: #fff;
   margin-bottom: 10px;
   font-weight: bold;
+  transition: 1s;
 }
 #elencoArchivioStampato li a {
   color: #000;
   text-decoration: none;
+}
+#elencoArchivioStampato li:hover {
+  color: #000;
+  text-decoration: none;
+  background: red;
 }
